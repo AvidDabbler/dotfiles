@@ -1,0 +1,10 @@
+[INFO  Sun Feb  4 10:53:21 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  Sun Feb  4 10:53:21 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  Sun Feb  4 10:53:22 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  Sun Feb  4 10:53:22 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[INFO  Sun Feb  4 10:55:27 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) {}
+[INFO  Sun Feb  4 10:55:28 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[INFO  Sun Feb  4 12:08:22 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Sun Feb  4 12:08:22 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  Sun Feb  4 12:08:24 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=typescript-language-server)
+[INFO  Sun Feb  4 12:08:25 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=json-lsp)
