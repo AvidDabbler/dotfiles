@@ -144,3 +144,4 @@ alias ssh_do_dokku="ssh -i ~/.ssh/do_dokku root@159.65.165.242"
 
 
 alias slipwise_migrate="docker-compose run web bin/rails db:migrate"
+alias delete_swap="rm -r ~/.local/state/nvim/swap"

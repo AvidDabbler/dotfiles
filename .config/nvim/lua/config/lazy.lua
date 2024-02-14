@@ -17,7 +17,8 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.dap.core" },
 		{ import = "lazyvim.plugins.extras.linting.eslint" },
 		{ import = "lazyvim.plugins.extras.test.core" },
-		{ import = "lazyvim.plugins.extras.coding.copilot" },
+		{ "neoclide/coc.nvim" },
+		-- { import = "lazyvim.plugins.extras.coding.copilot" },
 		{ import = "plugins" },
 	},
 	defaults = {
