@@ -17,7 +17,61 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.dap.core" },
 		{ import = "lazyvim.plugins.extras.linting.eslint" },
 		{ import = "lazyvim.plugins.extras.test.core" },
-		{ "elentok/format-on-save.nvim" },
+		{ import = "lazyvim.plugins.extras.coding.native_snippets" },
+		{
+			"barrett-ruth/live-server.nvim",
+			build = "pnpm add -g live-server",
+			cmd = { "LiveServerStart", "LiveServerStop" },
+			config = true,
+		},
+		{
+			"nomnivore/ollama.nvim",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+			},
+
+			-- All the user commands added by the plugin
+			cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
+
+			keys = {
+				-- Sample keybind for prompt menu. Note that the <c-u> is important for selections to work properly.
+				{
+					"<leader>oo",
+					":<c-u>lua require('ollama').prompt()<cr>",
+					desc = "ollama prompt",
+					mode = { "n", "v" },
+				},
+
+				-- Sample keybind for direct prompting. Note that the <c-u> is important for selections to work properly.
+				{
+					"<leader>oG",
+					":<c-u>lua require('ollama').prompt('Generate_Code')<cr>",
+					desc = "ollama Generate Code",
+					mode = { "n", "v" },
+				},
+			},
+
+			---@type Ollama.Config
+			opts = {
+				-- your configuration overrides
+			},
+		},
+		{
+			"chrisgrieser/nvim-recorder",
+			dependencies = "rcarriga/nvim-notify", -- optional
+			opts = {}, -- required even with default settings, since it calls `setup()`
+		},
+		-- {
+		-- 	"neovim/nvim-lspconfig",
+		-- 	opts = {
+		-- 		servers = {
+		-- 			graphql = {
+		-- 				filetypes = { "graphql", "javascript", "javascriptreact", "typescript", "typescriptreact", "" },
+		-- 			},
+		-- 		},
+		-- 	},
+		-- },
+		-- { "elentok/format-on-save.nvim" },
 		-- { "mhartington/formatter.nvim" },
 		-- { "neoclide/coc.nvim" },
 		-- { import = "lazyvim.plugins.extras.coding.copilot" },
