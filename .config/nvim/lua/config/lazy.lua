@@ -61,20 +61,7 @@ require("lazy").setup({
 			dependencies = "rcarriga/nvim-notify", -- optional
 			opts = {}, -- required even with default settings, since it calls `setup()`
 		},
-		-- {
-		-- 	"neovim/nvim-lspconfig",
-		-- 	opts = {
-		-- 		servers = {
-		-- 			graphql = {
-		-- 				filetypes = { "graphql", "javascript", "javascriptreact", "typescript", "typescriptreact", "" },
-		-- 			},
-		-- 		},
-		-- 	},
-		-- },
-		-- { "elentok/format-on-save.nvim" },
-		-- { "mhartington/formatter.nvim" },
-		-- { "neoclide/coc.nvim" },
-		-- { import = "lazyvim.plugins.extras.coding.copilot" },
+		{ "windwp/nvim-autopairs" },
 		{ import = "plugins" },
 	},
 	defaults = {
