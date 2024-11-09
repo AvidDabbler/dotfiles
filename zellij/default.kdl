@@ -1,0 +1,29 @@
+layout {
+    split_direction="Horizontal" {
+        pane size=70% {
+            split_direction="Vertical" {
+                pane size=50% {
+                    // This is the first main pane on the left (top)
+                    split_direction="Vertical"
+                }
+                pane size=50% {
+                    // This is the second main pane on the left (bottom)
+                    split_direction="Vertical"
+                }
+            }
+        }
+        pane size=30% {
+            split_direction="Vertical" {
+                pane size=50% {
+                    // This is the first smaller pane on the right (top)
+                    split_direction="Vertical"
+                }
+                pane size=50% {
+                    // This is the second smaller pane on the right (bottom)
+                    split_direction="Vertical"
+                }
+            }
+        }
+    }
+}
+
